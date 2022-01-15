@@ -1,0 +1,9 @@
+<div>
+    <div class="searchContainer">
+        <span class='searchLabel'>Filter</span>&nbsp;&nbsp;
+        <input class='searchText' type="text" [(ngModel)]="this.filterBy">
+    </div>
+    <div class="gameTile" *ngFor="let game of filteredGames">
+        <a class="gameNavigation" [routerLink]="game.RouterLink">{{game.Name | uppercase}}</a>
+    </div>
+</div>

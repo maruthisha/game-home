@@ -1,0 +1,45 @@
+.gameTile
+{
+    background-color: black;
+    color: white;
+    width: 65vmin;
+    min-height: 200px;
+    border-radius: 5px;
+    padding: 0px;
+    margin:10px;
+    vertical-align: middle;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.gameNavigation
+{
+    text-decoration: none;
+    color: white;
+    font-size: 11vmin;
+    font-weight: bolder;
+    align-self: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.searchLabel
+{
+    font-size: 5vmin;
+}
+
+.searchText
+{
+    width: 50vmin;
+    font-size: 5vmin;
+}
+
+.searchContainer
+{
+    padding: 1vmin;
+    margin:1vmin;
+}

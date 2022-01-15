@@ -1,0 +1,39 @@
+div
+{
+    width: 100%;
+}
+ul
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+ul a
+{
+    font-weight: bold;
+}
+ul a :hover
+{
+    background-color: darkslategrey;
+}
+li :hover
+{
+    color: yellow;
+}
+li
+{
+    list-style: none;
+    orientation: landscape;
+    text-decoration: none;
+    padding: 5px;
+    margin: 1px;
+    color: white;
+    display: inline-block;
+}
+a
+{
+    text-decoration: none;
+
+    width: 10%;
+    color: white;
+}

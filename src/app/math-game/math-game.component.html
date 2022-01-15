@@ -1,0 +1,25 @@
+<div class="mainContainer">
+    <div class="questionContainer">
+        <div class="question">
+            {{ this.question }}
+        </div>
+        
+    </div>
+    <div class="optionContainer">
+
+        <div *ngFor='let option of this.options' class="optionTile">
+            <button type="button" class="gameNavigation" (click)="processAnswer(option)">{{ option }}</button>
+        </div>
+    </div>
+    <div class="conntainer">
+        <div class="scoreSubContainer">
+            <img src="../../assets/red.png" class="scoreImage">
+            <span class="score">{{ this.wrong }}</span>
+        </div>
+        <div class="scoreSubContainer">
+            <img src="../../assets/green.png" class="scoreImage">
+            <span class="score">{{ this.right }}</span>
+        </div> 
+        
+    </div>
+</div>
