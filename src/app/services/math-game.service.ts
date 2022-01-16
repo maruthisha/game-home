@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { IMathGameSettings } from './IMath-game-settings';
 
 @Injectable()
 export class MathGameService {
@@ -6,6 +7,7 @@ export class MathGameService {
   constructor() { }
 
   signs: string[] = ["+", "+","X","X"]
+  gameSettings: IMathGameSettings = {maxQuestions : 5, maxTime : 2, allowedOperations:["+", "+","X","X"]};
   public entityName = "Math Game Service"
   public randomIntFromInterval(min: number, max: number) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)

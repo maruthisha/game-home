@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MathGameComponent } from './math-game/math-game.component';
 import { FormsModule } from '@angular/forms';
 import { GameMessageComponent } from './game-message/game-message.component';
+import { GameSettingsComponent } from './game-settings/game-settings.component';
+import { MathGameService } from './services/math-game.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,15 @@ import { GameMessageComponent } from './game-message/game-message.component';
     MenuComponent,
     NewGameComponent,
     MathGameComponent,
-    GameMessageComponent
+    GameMessageComponent,
+    GameSettingsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MathGameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

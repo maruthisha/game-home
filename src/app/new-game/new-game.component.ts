@@ -32,7 +32,7 @@ export class NewGameComponent implements OnInit {
     this.games = [
       {
         Name:'Math',
-        RouterLink:'/mathgame',
+        RouterLink:'/gameSettings',
         Enabled: true,
         Description: 'Math based game'
       },

@@ -6,7 +6,7 @@ import { MathGameService } from '../services/math-game.service';
   selector: 'app-math-game',
   templateUrl: './math-game.component.html',
   styleUrls: ['./math-game.component.css'],
-  providers:[MathGameService]
+  //providers:[MathGameService]
 })
 export class MathGameComponent implements OnInit {
 
@@ -22,13 +22,14 @@ export class MathGameComponent implements OnInit {
   wrong: number = 0;
   answer: number = 0;
   options: number[] = [];
-  maxQuestions: number = 5;
+  maxQuestions: number;
   currentQuestion: number = 0;
 
   constructor(private mathService: MathGameService,
               private router: Router) { 
     this.constructQuestion();
-    console.log(this.question);
+    this.maxQuestions = mathService.gameSettings.maxQuestions;
+    console.log(this.maxQuestions);
   }
 
   constructQuestion()
@@ -40,7 +41,7 @@ export class MathGameComponent implements OnInit {
       console.log("Game Over")
      
 
-      this.router.navigate(['/game-message',{score: this.right}, {total: this.maxQuestions}])
+      this.router.navigate(['/game-message', this.right, this.maxQuestions])
 
       this.currentQuestion = 0;
       this.wrong = 0;

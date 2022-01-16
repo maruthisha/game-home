@@ -1,0 +1,17 @@
+.resultBox
+{
+    background-color: black;
+    color: white;
+    font-size: 20vmin;
+    font-weight: bolder;
+    width: 80%;
+    padding: 6vmin;
+    margin: 6vmin;
+    border-radius: 80vmin;
+    text-align: center;
+}
+.centerDiv
+{
+    text-align: center;
+    justify-content: center;
+}

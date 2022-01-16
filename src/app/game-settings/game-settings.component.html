@@ -1,0 +1,28 @@
+<div>
+    <table style="width: 100%;" >
+        <tr>
+            <td>
+                <span class='searchLabel'>Maximum Questions</span>
+            </td>
+            <td>
+                <input class='searchText' type="number" max="50" min="5" [(ngModel)]='this.mathGameService.gameSettings.maxQuestions'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class='searchLabel'>Maximum Time (in minutes)</span>
+            </td>
+            <td>
+                <input class='searchText' type="number" max="10" min="2" [(ngModel)]='this.mathGameService.gameSettings.maxTime'>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button class="formButton" routerLink="/mathgame">Save</button>
+                <button class="formButton" (click)="resetValues()">Reset</button>
+            </td>
+        </tr>
+    </table>
+    
+</div>
+

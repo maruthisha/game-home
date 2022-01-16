@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MathGameService } from '../services/math-game.service';
 
 @Component({
   selector: 'app-game-message',
@@ -11,7 +12,7 @@ export class GameMessageComponent implements OnInit {
   score: string = "0"
   total: string = "0"
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, mathService: MathGameService) { }
 
 
   ngOnInit(): void {
